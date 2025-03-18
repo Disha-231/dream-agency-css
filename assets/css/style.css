@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
+/* -------------------header start -----------------------------*/
+.header {
+    position: absolute;
+
+}
+.social-icons svg {
+    margin-top: 4px;
+    width: 46px;
+    height: 49px;
+}
+.social-icons i {
+    color: rgba(51, 27, 59, 1);
+    font-size: 24px;
+    position: relative;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+.social-icons a {
+    transform: translateX(-150%);
+}
+.nav-links .header-info {
+    width: 100%;
+    padding: 0;
+}
+.nav-links .header-info .info {
+    margin-right: 20px;
+}
+.nav-links .header-info .info .head-title {
+    color: rgba(51, 27, 59, 1);
+    font-size: 18px;
+}
+.header .header-logo-title {
+    font-size: 2.5rem;
+    color: rgba(51, 27, 59, 1);
+}
+/*----------------------------------slider start-----------------------------*/
+.slider .text .start {
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(51, 27, 59, 1);
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.slider {
+    padding-bottom: 50px;
+    background-image: url("../img/slider-bg-image.png");
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px;
+    background-position: top right;
+    overflow: hidden;
+}
+.slider .text {
+    color: rgba(51, 27, 59, 1);
+    font-family: Hind Vadodara;
+}
+.slider .text .slider-heading {
+    font-size: 87PX;
+}
+/*------------------------service-start--------------------------------*/
+.service {
+    background-image: url('../img/service.png');
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-10%);
+}
+.service .title .service-title {
+    font-family: Hind Vadodara;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -1%;
+    display: block;
+    color: rgba(51, 27, 59, 1);
+
+}
+.service .title .service-heading {
+    font-family: Hind Vadodara;
+    color: rgba(51, 27, 59, 1);
+    font-size: 48px;
+    letter-spacing: -1%;
+    text-align: center;
+}
+.service-card {
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 150px;
+
+}
+.service-box {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+}
+.service-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 222, 212, 1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-box .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgba(51, 27, 59, 1);
+}
+.service-image .card-info {
+    font-size: 16px;
+    color: rgb(69, 40, 78);
+    ;
+}
+.service .slide-button {
+    position: absolute;
+    width: 85px;
+    height: 34px;
+    left: calc(60% - 85px/2 + 0.5px);
+}
+/*-------------------slide-slider start-------------------------------*/
+.slider-text .side-slider-head, .side-slider-info {
+    color: rgb(95, 60, 107);
+    letter-spacing: 1px;
+}
+.slider-text .more {
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(51, 27, 59, 1);
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/*---------------projects -----------------*/
+.projects {
+    background-image: url('../img/rectangle-cream.png');
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.projects .slide-btn {
+    transform: translateX(20%);
+    margin-top: 30px;
+}
+.project-heading .recent-work {
+    font-family: Hind Vadodara;
+    color: #331B3B;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 106%;
+    letter-spacing: -1%;
+    text-transform: capitalize;
+}
+.project-heading .work {
+    color: #331B3B;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.projects-details .work-details {
+    color: #331B3B;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-transform: capitalize;
+}
+.project-image-card {
+    margin-top: 100px;
+}
+.project-image-card .work-image {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 150px;
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.pr-sm-img .view-work-btn {
+    border: 1px solid #331B3B;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    color: #331B3B;
+    font-weight: 700;
+    font-size: 16px;
+}
+/*-----------------testimonial--------------*/
+.testimonial {
+    padding-top: 200px;
+}
+.testimonial .our-testimonial {
+
+    font-family: Hind Vadodara;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 111.00000000000001%;
+    letter-spacing: -1%;
+    text-align: center;
+    color: #331B3B;
+}
+.testimonial .client-saying {
+    font-family: Hind Vadodara;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 111.00000000000001%;
+    letter-spacing: -1%;
+    text-align: center;
+    color: #331B3B;
+
+}
+.client-review {
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 500px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.testimonial .client-review .review-content {
+    color: #331B3B;
+    letter-spacing: 2px;
+
+}
+.client-review .ui-soup {
+    font-weight: 700;
+    font-size: 20px;
+    color: #331B3B;
+}
+/*--------------footer-------------------*/
+.footer {
+    margin-top: 200px;
+   
+    padding-top: 90px;
+    background-color: black;
+}
+.footer-content {
+ line-height: 2;
+    color: #fff;
+}
+.footer-content .footer-heading {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 1%;
+}
+.footer-content .footer-info{
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.footer .get-in-touch{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:aliceblue;
+}
+.footer .email{
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: black;
+
+}
+.footer .f-send-btn{
+    background-color: aliceblue;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px;
+    
+}
+.footer-map .map-content{
+    background-color: aliceblue;
+    width: 200px;
+    align-items: center;
+    padding: 10px;
+    transform: translateY(-260%);
+    margin: 20px;
+    height: auto;
+}
+.map-content .texas{
+    font-weight: 800;
+}
+.map-content .US{
+    font-size: 20px;
+    font-weight: 500;
+}
+.map-content .view-large{
+    font-size:20px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
