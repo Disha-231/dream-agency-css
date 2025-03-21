@@ -12,6 +12,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
@@ -22,70 +26,67 @@
 
 <body>
     <!-- header -->
-    <header class="header">
-        <div class="container py-25">
+    <header class="header py-3">
+        <div class="container-lg">
             <div class="row align-items-center">
-                
-               <div class="col-12 d-flex">
-                <div class="col-md-4 menu">
-                    <ul class="nav d-flex justify-content-between">
-                        <li class="home">home</li>
-                        <li>about us</li>
-                        <li>services</li>
-                        <li>Contact</li>
-                    </ul>
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="col-sm-12 col-md-4 menu">
+                        <ul class="nav d-flex justify-content-between">
+                            <li class="home">home</li>
+                            <li>about us</li>
+                            <li>services</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex justify-content-center">
+                        <h3 class="heading text-Playfair-Display text-primary">dream
+                            agency</h3>
+                    </div>
+                    <div class="col-sm-12 col-md-4 social-icons d-flex align-items-center justify-content-end
+                   text-primary">
+
+                        <img src="assets/img/border.svg" class="border-icon" alt>
+                        <i class=" header-icons fb fa-brands fa-facebook-f"></i>
+
+                        <img src="assets/img/border.svg" class="border-icon">
+                        <i class=" header-icons ld fa-brands fa-linkedin-in"></i>
+
+                        <img src="assets/img/border.svg" class="border-icon" alt>
+                        <i class=" header-icons ig fa-brands fa-instagram"></i>
+
+                    </div>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <h3 class="heading text-Playfair-Display text-primary">dream
-                        agency</h3>
-                </div>
-                <div class="col-md-4 social-icons   justify-content-center d-flex text-primary">
-
-                    <img src="assets/img/border.svg" class="border-icon" alt>
-                    <i class=" header-icons fa-brands fa-facebook-f"></i>
-
-                    <img src="assets/img/border.svg" class="border-icon">
-                    <i class=" header-icons fa-brands fa-linkedin-in"></i>
-
-                    <img src="assets/img/border.svg" class="border-icon" alt>
-                    <i class=" header-icons fa-brands fa-instagram"></i>
-
-                </div>
-               </div>
             </div>
         </div>
     </header>
-
     <!--slider-->
-    <section>
-        <div class="container-fluid">
+    <section class="py-50">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 d-flex pt-100 align-items-center justify-content-center text-primary slider">
-                    <div class="row w-100">
+                <div class="col-12 d-flex align-items-center justify-content-between text-primary slider">
                         <div class="col-md-6 slider-content">
                             <p class="help">we help you<br>
                                 <span class="business">to grow your
                                     Business</span>
                             </p>
-                            <p class="slider-info">Lorem Ipsum has been the
-                                industry's standard dummy text ever since
+                            <p class="slider-info text-start">Lorem Ipsum has been the
+                                industry's standard dummy text<br> ever since
                                 the 1500s, when an unknown printer took a
-                                galley of type and scrambled it to make a
+                                galley <br>of type and scrambled it to make a
                                 type specimen book.</p>
                             <button class="slider-btn">Get Started</button>
                         </div>
-
-                        <div class="col-md-6 slider-image">
-                            <img src="assets/img/slider.png" class="slider-photo" height="800px" alt="slider image">
+                         <div class="col-md-6 slider-image">
+                             <img src="assets/img/slider-bg-image.png"
+                             class="postions-absolute slider-bg img-fluid" alt="slider image"> 
+                             <img src="assets/img/slider.png"
+                             class="slider-photo " alt="slider image">
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!--service-->
-
     <section class="service">
         <div class="container">
             <div class="row">
@@ -93,7 +94,7 @@
                     <h2 class="service-title text-primary">What We Do<br>
                         <span class="business">For Your Business</span>
                     </h2>
-                    <!-- Slick Slider for service items -->
+
                     <div class="slick-slider">
                         <div class="service-box">
                             <img src="assets/img/service-icons.png" width="50px" class="ms-3 mt-3 service-image" alt>
@@ -133,8 +134,6 @@
             </div>
         </div>
     </section>
-
-
     <!--slider-2-->
     <section>
         <div class="container-fluid">
@@ -164,13 +163,14 @@
             </div>
         </div>
     </section>
-
-
     <!--projects-->
     <section class="projects">
         <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 mb-5 d-flex justify-content-between">
+            <div class="row ">
+                <div class="project-img">
+                    <img src="assets/img/rectangle-cream.png" width="990px" height="500px">
+                </div>
+                <div class="col-12 pr-content text-primary d-flex justify-content-center">
                     <div class="col-6 project-heading">
                         <h1 class="recent-work">our recent work <br>
                             <span class="work">
@@ -179,149 +179,133 @@
                         </h1>
                     </div>
                     <div class="col-6 projects-details">
-                        <p class="work-details">Lorem Ipsum has been the industry's standard dummy text ever<br> since
-                            the 1500s, when an unknown printer took <br>a galley of type and scrambled it to make a type
+                        <p class="work-details">Lorem Ipsum has been the industry's standard dummy text ever since
+                            the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                             specimen book.</p>
                     </div>
                 </div>
+                <div class="col-12 d-flex justify-content-center pr-main">
+                    
 
-                <div class="col-12 project-sec d-flex flex-wrap justify-content-center
-                          ">
+                    <div class="col-4 pr-card">
+                        <div class="col-12 main-card d-flex justify-content-center">
+                            <div class=" pr-big-img col-8">
+                                <img src="assets/img/pr-computer.png" width="250px" height="
+                                170px">
+                                <span class="pr-name text-primary">ui soup</span>
+                            </div>
+                            <div class=" pr-sm-img d-flex flex-wrap justify-content-end col-4">
+                                <img src="assets/img/pr-phone.png" width="80px" height="
+                                170px">
+                                <span class="view-work text-primary py-x px-2">view work</span>
+                            </div>
 
-                       <div class="col-6 project-card">
-                        <div class="col-12 d-flex flex-wrap m-1 justify-content-between align-items-center">
-                            <div class="col-7 big-img">
-                                <img src="assets/img/pr-computer.png" height="200px" width="250px" alt="">
-                           <div class="pr">
-                            <p class="project-name text-primary">ui soup</p>
-                           
-                           </div>
-                            </div>
-                            <div class="col-5 sm-img">
-                                <img src="assets/img/pr-phone.png">
-                                <div class="pr">
-                                    <p class="project-view align-items-center text-center">view Work</p>                                   
-                                   </div>
-                            </div>
                         </div>
-
-                       
                     </div>
 
-                    <div class="col-6 project-card">
-                        <div class="col-12 d-flex flex-wrap m-1 justify-content-between align-items-center">
-                            <div class="col-7 big-img">
-                                <img src="assets/img/pr-laptop.png" height="200px" width="250px" alt="">
-                                <div class="pr">
-                                    <p class="project-name text-primary">goldcrown lab</p>
-                                   
-                                   </div>
-                            </div>
-                            <div class="col-5 sm-img">
-                                <img src="assets/img/pr-iphone.png">
-                                <div class="pr">
-                                    <p class="project-view align-items-center text-center">view work</p>
-                                   
-                                   </div>
-                            </div>
-                        </div>
+                    <div class="col-4 pr-card">
+                        <div class="col-12 main-card d-flex justify-content-center">
+                            <div class=" pr-big-img col-8">
+                                <img src="assets/img/pr-computer.png" width="250px" height="
+                                170px">
+                                <span class="pr-name text-primary">ui soup</span>
 
-                       
+                            </div>
+                            <div class=" pr-sm-img d-flex flex-wrap justify-content-end col-4">
+                                <img src="assets/img/pr-phone.png" width="80px" height="
+                                170px">
+                                <span class="view-work text-primary py-x px-2">view work</span>
+
+                            </div>
+
+                        </div>
                     </div>
 
+                    <div class="col-4 pr-card">
+                        <div class="col-12 main-card d-flex justify-content-center">
+                            <div class=" pr-big-img col-8">
+                                <img src="assets/img/pr-computer.png" width="250px" height="
+                                170px">
+                                <span class="pr-name text-primary">ui soup</span>
 
+                            </div>
+                            <div class=" pr-sm-img d-flex flex-wrap justify-content-end col-4">
+                                <img src="assets/img/pr-phone.png" width="80px" height="
+                                170px">
+                                <span class="view-work text-primary py-x px-2">view work</span>
 
+                            </div>
 
+                        </div>
+                    </div>
 
                 </div>
-
-
-
             </div>
         </div>
         </div>
     </section>
-
     <!--testimonial-->
-    <section class="testimonial">   
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 testimonial-heading">
-                <h2 class="our-testimonial">
-                Our Testimonials <span class="client-saying"><br>What Our Clients Are Saying</span>
-                </h2>
+    <section class="testimonial">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 testimonial-heading">
+                    <h2 class="our-testimonial">
+                        Our Testimonials <span class="client-saying"><br>What Our Clients Are Saying</span>
+                    </h2>
+                </div>
+                <div class="col-12 d-flex ">
+                    <div class="m-2 col-5  client-review">
+                        <img src="assets/img/testimonial.png" alt="">
+
+                        <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries.</p>
+                        <span class="ui-soup"> UI SOUP</span>
+                    </div>
+                    <div class="m-2 col-5  client-review">
+                        <img src="assets/img/testimonial.png" alt="">
+
+                        <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries.</p>
+                        <span class="ui-soup"> UI SOUP</span>
+                    </div>
+                   
+                </div>
+
+
             </div>
-            <div class="col-12 slick-sliders d-flex flex-wrap justify-content-center m-4">
-                <div class=" element element-1 m-3 col-md-6 flex-end client-review">
-                    <img src="assets/img/testimonial.png" alt="">
-
-                    <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    <img src="assets/img/line.png" alt="UI SOUP"> <span class="ui-soup"> UI SOUP</span>
-                </div>
-                <div class=" element element-2 m-3 col-md-6  flex-start client-review">
-                    <img src="assets/img/testimonial.png" alt="">
-
-                    <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    <img src="assets/img/line.png"  alt=""> <span class="ui-soup"> UI SOUP</span>
-                </div>
-                <div class=" element element-3 m-3 col-md-6 flex-end client-review">
-                    <img src="assets/img/testimonial.png" alt="">
-
-                    <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    <img src="assets/img/line.png"  alt=""> <span class="ui-soup"> UI SOUP</span>
-                </div>
-                <div class=" element element-4 m-3 col-md-6 flex-end client-review">
-                    <img src="assets/img/testimonial.png" alt="">
-
-                    <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    <img src="assets/img/line.png"  alt=""> <span class="ui-soup"> UI SOUP</span>
-                </div>
-                <div class=" element element-5 m-3 col-md-6  flex-start client-review">
-                    <img src="assets/img/testimonial.png" alt="">
-
-                    <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    <img src="assets/img/line.png"  alt=""> <span class="ui-soup"> UI SOUP</span>
-                </div>
-                <div class=" element element-6 m-3 col-md-6 flex-end client-review">
-                    <img src="assets/img/testimonial.png" alt="">
-
-                    <p class="review-content">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    <img src="assets/img/line.png"  alt=""> <span class="ui-soup"> UI SOUP</span>
-                </div>
-            </div>
-           
-           
         </div>
-    </div>
-        </section>
-
+    </section>
     <!--footer-->
     <section>
-            <div class="container-fluid">
+        <div class="container-fluid">
 
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-between justify-content-center footer">
-                        <div class="col-6 footer-content">
-                            <h1 class="footer-heading">Dream Agency</h1>
-                            <p class="footer-info">Lorem Ipsum has been the industry's standard dummy text <br>ever since the 1500s, when an unknown printer took a galley<br> of type and scrambled it to make a type specimen book. It<br> has survived not only five centuries.</p>
-                            <span class="get-in-touch">Get In Touch</span>
-                            
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between justify-content-center footer">
+                    <div class="col-6 footer-content">
+                        <h1 class="footer-heading">Dream Agency</h1>
+                        <p class="footer-info">Lorem Ipsum has been the industry's standard dummy text <br>ever since
+                            the 1500s, when an unknown printer took a galley<br> of type and scrambled it to make a type
+                            specimen book. It<br> has survived not only five centuries.</p>
+                        <span class="get-in-touch">Get In Touch</span>
+
                         <br>
-                        <input type="email" class="email" placeholder="ENTER YOUR EMAIL"/> <span class="f-send-btn">send</span>
-                        </div>
-                        <div class="col-6 footer-map">
-                            <img src="assets/img/footer-map.png" width="500px" alt="">
-                           <div class="map-content">
+                        <input type="email" class="email" placeholder="ENTER YOUR EMAIL" /> <span
+                            class="f-send-btn">send</span>
+                    </div>
+                    <div class="col-6 footer-map">
+                        <img src="assets/img/footer-map.png" width="500px" alt="">
+                        <div class="map-content">
                             <h4 class="texas">Texas</h4>
-                                <span class="US">United States</span><br> 
-                                <a href="#" class="view-large"> View Larger Map</a>
-                           </div>
+                            <span class="US">United States</span><br>
+                            <a href="#" class="view-large"> View Larger Map</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -332,62 +316,78 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+
+
+
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.slick-sliders').slick({
-                slidesToShow: 2,
+            $('.slick-slider').slick({
+                slidesToShow: 3.5,  
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                dots: true,
-                arrows: false,
+                dots: false,
+                arrows: true,
+                prevArrow: '<button type="button" class="prev-btn">❮</button>',
+                nextArrow: '<button type="button" class="next-btn">❯</button>',
                 responsive: [
                     {
                         breakpoint: 1024,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 2.5
                         }
                     },
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 1
+                            slidesToShow: 1.5
                         }
                     }
                 ]
             });
         });
+
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.slick-slider').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            dots: true,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.pr-main').slick({
+                slidesToShow: 2.5,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,  // Enable arrows
+                dots: false,   // Remove dots
+                prevArrow: '<button type="button" class="prev">❮</button>',
+                nextArrow: '<button type="button" class="next">❯</button>',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1.5,
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                        }
                     }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
+                ]
+            });
         });
-    });
-</script>
-
+        </script>
+        
 
 </body>
 
