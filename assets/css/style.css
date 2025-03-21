@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 .text-primary {
     color: #331B3B !important;
 }
@@ -40,6 +38,8 @@ ul, li {
 }
 
 /* -------------------header start -----------------------------*/
+/*-----------------------------------menu-css-----------------------*/
+
 .header .menu {
     font-weight: 400;
     font-size: 16px;
@@ -69,6 +69,7 @@ ul, li {
     height: 4px;
     background-color: #fdc221;
 }
+/*-------------------------------------logo-css----------------------------------*/
 
 .heading {
     font-family: Playfair Display, serif;
@@ -78,6 +79,7 @@ ul, li {
     letter-spacing: 1%;
     text-transform: capitalize;
 }
+/*---------------------------------------icons-css-------------------------------*/
 
 .social-icons {
     gap: 1px;
@@ -91,12 +93,10 @@ ul, li {
 
 .social-icons .fb {
     transform: translateX(-300%);
-
 }
 
 .social-icons .ld {
     transform: translateX(-210%);
-
 }
 
 .social-icons .ig {
@@ -112,11 +112,9 @@ ul, li {
     margin-right: 5px;
 }
 
+/*-----------------------------------------slider-section-----------------------------------------------*/
 
-
-/*-------------slider---------------------*/
-
-
+/*--------------------------------content-side-css----------------------------------------------*/
 .slider-content .help {
     font-weight: 700;
     font-size: 70px;
@@ -145,21 +143,6 @@ ul, li {
     background-color: #fdc221;
 }
 
-.slider-image .slider-photo {
-
-    max-width: 500px;
-}
-
-.slider-bg {
-    position: absolute;
-    top: -180px;
-    left: 60%;
-    width: 400px;
-    z-index: -999;
-    height: 710px;
-    overflow: hidden;
-}
-
 .slider-info {
     font-weight: 400;
     font-size: 12px;
@@ -183,11 +166,24 @@ ul, li {
     letter-spacing: 2%;
     text-transform: uppercase;
 }
+/*------------------------------------slider-img-css----------------------------------------*/
 
+.slider-image .slider-photo {
+    max-width: 500px;
+}
+.slider-bg {
+    position: absolute;
+    top: -180px;
+    left: 60%;
+    width: 400px;
+    z-index: -999;
+    height: 710px;
+    overflow: hidden;
+}
 
+/*----------------------------------------service-section-------------------------------------------------*/
 
-
-/*------------------------service-start--------------------------------*/
+/*------------------------------background-of-service------------------------*/
 .service {
     background-image: url('../img/service.png');
     background-size: cover;
@@ -198,7 +194,35 @@ ul, li {
     padding: 50px;
 
 }
+.service-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 106%;
+    letter-spacing: -1%;
+    text-align: center;
+}
 
+.business {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 106%;
+    letter-spacing: -1%;
+    text-align: center;
+    position: relative;
+}
+
+.business::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    width: 47%;
+    height: 10px;
+    z-index: -999;
+    background-color: #fdc221;
+}
+
+/*-------------------------------------service-cards----------------------------------*/
 .service-image {
     background-color: #FFDED4;
     padding: 5px;
@@ -238,34 +262,6 @@ ul, li {
     transform: translateY(-10px);
 }
 
-.service-title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 106%;
-    letter-spacing: -1%;
-    text-align: center;
-}
-
-.business {
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 106%;
-    letter-spacing: -1%;
-    text-align: center;
-    position: relative;
-}
-
-.business::after {
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    right: 0;
-    width: 47%;
-    height: 10px;
-    z-index: -999;
-    background-color: #fdc221;
-}
-
 .slick-slider {
     display: flex;
     position: relative;
@@ -275,8 +271,8 @@ ul, li {
     padding: 0 15px;
 }
 
-/*-----------------side slider-----------------*/
-
+/*------------------------------------------about-us-section---------------------------------------------------*/
+    /*--------------------------------------text-side---------------------------------------*/
 
 .slider-text .about-us {
     font-weight: 700;
@@ -288,7 +284,6 @@ ul, li {
     font-weight: 300;
     font-size: 48px;
     letter-spacing: -1%;
-
 }
 
 .side-slider-info {
@@ -296,7 +291,6 @@ ul, li {
     font-size: 12px;
     line-height: 146%;
     letter-spacing: 2%;
-
 }
 
 .slider-text .fake-or-real {
@@ -328,18 +322,38 @@ ul, li {
 }
 
 
-/*---------------projects -----------------*/
-
-
+/*--------------------------------------------projects-section------------------ -----------------*/
+        /*-------------------------------image-setup-css----------------------------------*/
 .project-img {
     position: relative;
 }
+        /*-------------------------------main-heading-content-css----------------------------------*/
 
 .pr-content {
     position: absolute;
     padding-top: 30px;
 }
+.recent-work .work {
+    position: relative;
+}
 
+.recent-work .work::after {
+    content: '';
+    position: absolute;
+    z-index: -999;
+    top: 42px;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background-color: #fdc221;
+}
+
+.project-heading {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+/*------------------------------------pr-cards--------------------------------------------*/
 .pr-main {
     position: absolute;
     margin-top: 200px;
@@ -366,50 +380,25 @@ ul, li {
     border-radius: 50px;
 }
 
-.recent-work .work {
-    position: relative;
-}
 
-.recent-work .work::after {
-    content: '';
-    position: absolute;
-    z-index: -999;
-    top: 42px;
-    left: 50%;
-    width: 50%;
-    height: 4px;
-    background-color: #fdc221;
-}
 
-.project-heading {
-    font-size: 24px;
-    line-height: 32px;
-    text-transform: capitalize;
-}
-
-/*-----------------testimonial--------------*/
+/*------------------------------------testimonial-section-------------------------------------*/
 .testimonial {
     padding-top: 100px;
 }
-
 .testimonial .our-testimonial {
-
     font-weight: 700;
     font-size: 42px;
-    line-height: 111.00000000000001%;
     letter-spacing: -1%;
     text-align: center;
     color: #331B3B;
 }
-
 .testimonial .client-saying {
     font-weight: 300;
     font-size: 40px;
     text-align: center;
     color: #331B3B;
     position: relative;
-
-
 }
 
 .testimonial .client-saying::after {
@@ -422,6 +411,7 @@ ul, li {
     height: 4px;
     background-color: #fdc221;
 }
+/*----------------------------testimonial-card----------------------=---------------*/
 
 .client-review {
     margin-top: 50px;
@@ -433,7 +423,6 @@ ul, li {
 
 .testimonial .client-review .review-content {
     color: #331B3B;
-
 }
 
 .client-review .ui-soup {
@@ -452,10 +441,9 @@ ul, li {
     border: 2px solid #fdc221;
 }
 
-/*--------------footer-------------------*/
+/*-----------------------------------------footer-section--------------------------------------*/
 .footer {
     margin-top: 200px;
-
     padding-top: 90px;
     background-color: black;
 }
@@ -517,9 +505,6 @@ ul, li {
     position: absolute;
     width: 143;
     height: 52;
-
-
-
 }
 
 .footer-map .map-content {
@@ -547,7 +532,9 @@ ul, li {
     letter-spacing: 1px;
 }
 
-/*---------------------arrows-------------------------*/
+/*-----------------------------------arrows--------------------------------------*/
+
+/* -----------------------what we do for your business-----------------------*/
 .prev-btn {
     position: absolute;
     bottom: -20%;
@@ -573,6 +560,7 @@ ul, li {
     font-size: 18px;
     color: #331B3B;
 }
+/*------------------------------------our recent work By our experts---------------------------------------*/
 
 .prev {
     position: absolute;
